@@ -1,640 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Course Selections for High School</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header
-      class="flex flex-wrap items-center justify-between px-4 py-4 bg-white border-b border-neutral-300 lg:px-10"
-    >
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e2c78a7b9f55e91b3ec2058ac5c2e29404202f4c582f7d635efd5391c8271ad?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-        alt="Company logo"
-        class="w-32 h-auto lg:w-40"
-      />
-      <button class="lg:hidden" aria-label="Toggle menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-      <nav class="w-full lg:flex lg:items-center lg:w-auto">
-        <ul
-          class="flex flex-col mt-4 space-y-2 lg:flex-row lg:space-y-0 lg:space-x-4 lg:mt-0"
-        >
-          <li>
-            <a
-              href="#courses"
-              class="block py-2 text-black hover:text-violet-700"
-              >Courses</a
-            >
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              class="block py-2 text-black hover:text-violet-700"
-              >Pricing</a
-            >
-          </li>
-        </ul>
-        <div class="flex items-center mt-4 space-x-3 lg:mt-0 lg:ml-4">
-          <a
-            href="#signin"
-            class="px-4 py-2 text-sm font-medium text-white bg-violet-700 rounded hover:bg-violet-800"
-            >Sign in</a
-          >
-          <a
-            href="#signup"
-            class="px-4 py-2 text-sm font-medium text-violet-700 bg-white border border-violet-700 rounded hover:bg-violet-50"
-            >Sign up</a
-          >
-        </div>
-      </nav>
-    </header>
-    <!-- Section 1 -->
-    <section class="container mx-auto px-4 py-20 max-w-7xl">
-      <div class="flex flex-col md:flex-row gap-8">
-        <div class="w-full md:w-1/2">
-          <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-bold text-violet-950 mb-6"
-          >
-            Smart course selections <br />
-            for <span class="text-red-500">high school</span>
-          </h1>
-          <p class="text-lg md:text-xl font-medium text-violet-950 mb-10">
-            Select the right courses. Explore career paths. Create a multi-year
-            plan. Shape your future and give wings to your dreams.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center px-6 py-3 bg-violet-700 text-white font-medium rounded-lg transition-colors hover:bg-violet-800"
-          >
-            Explore courses
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 ml-2"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="w-full md:w-1/2 mt-10 md:mt-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/95bd1c2494e49af9768b407d7694a069a26d72c8a74bb9a24982e89dd4362bc9?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-            alt="Students exploring course selections"
-            class="w-full h-auto rounded-2xl shadow-lg"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Section 2 -->
-    <section class="container mx-auto px-4 py-20 max-w-7xl">
-      <div
-        class="self-center px-12 py-7 mt-24 max-w-full bg-violet-50 rounded-[32px] w-[1066px] max-md:px-5 max-md:mt-10"
-      >
-        <div class="flex gap-5 max-md:flex-col">
-          <header class="flex flex-col w-[21%] max-md:ml-0 max-md:w-full">
-            <h2 class="text-5xl font-bold text-violet-950 max-md:mt-10">
-              It's easy to create <br />
-              learning <br />
-              path
-            </h2>
-          </header>
-          <main class="flex flex-col ml-5 w-[79%] max-md:ml-0 max-md:w-full">
-            <div class="self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-              <div class="flex gap-5 max-md:flex-col">
-                <figure class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                  <div
-                    class="w-full aspect-square relative max-md:aspect-[4/3]"
-                  >
-                    <div
-                      class="absolute inset-0 rounded-full border-4 border-red-600 border-dashed overflow-hidden max-md:rounded-lg"
-                    >
-                      <img
-                        src="https://placehold.co/600x400/png"
-                        alt="Learning path step 1"
-                        class="w-full h-full object-cover"
-                      />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .login-cont {
+            font-family: 'Google Sans', -apple-system, Roboto, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #3f3e3e;
+            /* height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            display: flex;
+             width: 100vw;
+             /* height: 120vh; */
+        }
+        .login-content,
+        .login-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-top: 25px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 10px rgba(18, 17, 17, 0.4);
+            height: 100%;
+        }
+        .login-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .login-form-header h1 {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .login-form-header p {
+            font-size: 16px;
+            color: #515151;
+            margin-bottom: 32px;
+        }
+        .login-form-group {
+            margin-bottom: 16px;
+        }
+        .login-form-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .login-form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #d0d0d0;
+            border-radius: 4px;
+        }
+        .login-password-input {
+            position: relative;
+        }
+        .login-password-toggle {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .login-forgot-password {
+            text-align: right;
+            margin-bottom: 16px;
+        }
+        .login-forgot-password a {
+            color: #603ac8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #603ac8;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .login-divider {
+            text-align: center;
+            margin: 24px 0;
+            color: #a3a3a3;
+            font-family: 'Lato', sans-serif;
+        }
+        .login-social-login button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            border: 1px solid #d0d0d0;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #515151;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .login-social-login img {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .login-signup-prompt {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .login-signup-prompt a {
+            color: #603ac8;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .login-org-login {
+            text-align: center;
+            margin-top: 24px;
+        }
+        .login-org-login a {
+            color: #603ac8;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+            }
+            .login-content,
+            .login-image {
+                width: 100%;
+                height: 50vh;
+            }
+            .login-image {
+                order: -1;
+                margin-bottom: 40px;
+                display: none; /* Hide the image on mobile */
+            }
+            .login-form {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="login-cont">
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-form">
+                <div class="login-form-header">
+                    <h1>Welcome back</h1>
+                    <p>Create your own learning path</p>
+                </div>
+                <form>
+                    <div class="login-form-group">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="Enter your email ID" required>
                     </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <div
-                        class="w-3/4 h-3/4 border-4 border-red-600 rounded-full border-dashed animate-spin-slow"
-                      ></div>
-                    </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-2xl font-bold text-red-600">01</span>
-                    </div>
-                  </div>
-                </figure>
-                <figure class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                  <div
-                    class="w-full aspect-square relative max-md:aspect-[4/3]"
-                  >
-                    <div
-                      class="absolute inset-0 rounded-full border-4 border-violet-800 border-dashed overflow-hidden max-md:rounded-lg"
-                    >
-                      <img
-                        src="https://placehold.co/600x400/png"
-                        alt="Learning path step 2"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <div
-                        class="w-3/4 h-3/4 border-4 border-violet-800 rounded-full border-dashed animate-spin-slow"
-                      ></div>
-                    </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-2xl font-bold text-violet-800">02</span>
-                    </div>
-                  </div>
-                </figure>
-                <figure class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                  <div
-                    class="w-full aspect-square relative max-md:aspect-[4/3]"
-                  >
-                    <div
-                      class="absolute inset-0 rounded-full border-4 border-teal-600 border-dashed overflow-hidden max-md:rounded-lg"
-                    >
-                      <img
-                        src="https://placehold.co/600x400/png"
-                        alt="Learning path step 3"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <div
-                        class="w-3/4 h-3/4 border-4 border-teal-600 rounded-full border-dashed animate-spin-slow"
-                      ></div>
-                    </div>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-2xl font-bold text-teal-600">03</span>
-                    </div>
-                  </div>
-                </figure>
-              </div>
-            </div>
-          </main>
-        </div>
-      </div>
-    </section>
-    <!-- Section 3 -->
-    <section class="container mx-auto px-4 py-20 max-w-7xl">
-      <div class="w-full max-w-[1066px] max-md:max-w-full">
-        <div class="flex gap-5 max-md:flex-col">
-          <div class="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
-            <div
-              class="flex flex-col grow mt-10 max-md:mt-10 max-md:max-w-full"
-            >
-              <div class="max-md:max-w-full">
-                <div class="flex gap-5 max-md:flex-col">
-                  <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                    <div
-                      class="flex flex-col mt-3 text-violet-950 max-md:mt-10"
-                    >
-                      <h2 class="text-5xl font-bold">
-                        Your Learning <br />
-                        path
-                      </h2>
-                      <p class="mt-8 text-base">
-                        Build your dream personal learning pathway by choosing
-                        the right high school courses to create multi year
-                        course progression roadmap. Set yourself on road to
-                        unparalleled success
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full"
-                  >
-                    <article
-                      class="flex flex-col justify-center items-center px-3 w-full text-base rounded-xl border border-violet-700 border-solid aspect-square bg-white bg-opacity-10 shadow-[0px_0px_24px_rgba(0,0,0,0.12)] text-neutral-800 max-md:mt-9"
-                    >
-                      <div
-                        class="flex flex-col px-2.5 pt-2.5 pb-12 w-full bg-white rounded-xl"
-                      >
-                        <header
-                          class="flex gap-2 text-2xl font-bold text-violet-700"
-                        >
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdc5a57220f3c457d31116307d479df869c30ce1e93da79ee651841d8b67e698?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                            class="shrink-0 self-start w-6 aspect-square"
-                            alt=""
-                          />
-                          <h3>9th grade</h3>
-                        </header>
-                        <p class="mt-3 text-lg font-medium text-neutral-400">
-                          Regular track
-                        </p>
-                        <hr class="shrink-0 mt-2 h-px bg-stone-200" />
-                        <div class="flex gap-3 mt-5">
-                          <span
-                            class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                            >English 1</span
-                          >
-                          <span
-                            class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                            >Algebra 1</span
-                          >
-                          <span
-                            class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                            >World history</span
-                          >
+                    <div class="login-form-group">
+                        <label for="password">Password</label>
+                        <div class="login-password-input">
+                            <input type="password" id="password" placeholder="Enter password" required>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f2cfa713f8ca978c7f5e617e57e315d49ce44a372080e2f915ff169cbfb4334?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221" alt="Show password" class="login-password-toggle">
                         </div>
-                        <div class="flex gap-3 mt-3">
-                          <span
-                            class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                            >World history</span
-                          >
-                          <span
-                            class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                            >PE Elective (1 credit)</span
-                          >
-                        </div>
-                        <span
-                          class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                          >Earth space science or physical science</span
-                        >
-                        <span
-                          class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                          >Fine Art/CTE elective (1 Credit)</span
-                        >
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <article
-                class="flex flex-col justify-center items-center self-end px-3 mt-5 text-base rounded-xl border border-violet-700 border-solid aspect-square bg-white bg-opacity-10 shadow-[0px_0px_24px_rgba(0,0,0,0.12)] text-neutral-800 w-[347px]"
-              >
-                <div
-                  class="flex flex-col px-2.5 pt-2.5 pb-12 w-full bg-white rounded-xl"
-                >
-                  <header class="flex gap-2 text-2xl font-bold text-violet-700">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdc5a57220f3c457d31116307d479df869c30ce1e93da79ee651841d8b67e698?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                      class="shrink-0 self-start w-6 aspect-square"
-                      alt=""
-                    />
-                    <h3>11th grade</h3>
-                  </header>
-                  <p class="mt-3 text-lg font-medium text-neutral-400">
-                    Regular track
-                  </p>
-                  <hr class="shrink-0 mt-2 h-px bg-stone-200" />
-                  <div class="flex gap-2 mt-5">
-                    <div class="flex flex-col">
-                      <span
-                        class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                        >English 3</span
-                      >
-                      <span
-                        class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                        >Algebra 2</span
-                      >
                     </div>
-                    <div class="flex flex-col">
-                      <span
-                        class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                        >United states history</span
-                      >
-                      <span
-                        class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                        >World language</span
-                      >
+                    <div class="login-forgot-password">
+                        <a href="#">Forgot password?</a>
                     </div>
-                  </div>
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                    >Chemistry or marine biology</span
-                  >
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                    >Elective (1 Credit)</span
-                  >
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <div class="login-divider">or</div>
+                <div class="login-social-login">
+                    <button class="login-google-login">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4720af1a214c657d1e1cca73daa4607789fe33ffa4fc1edabcd957f356f991d?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221" alt="Google logo">
+                        Continue with Google
+                    </button>
+                    <button class="login-facebook-login">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e72d4c8a6763231e3574d07e18ecfbdcff2997c31b8c40dbe83be96aaf0479d?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221" alt="Facebook logo">
+                        Continue with Facebook
+                    </button>
                 </div>
-              </article>
+                <div class="login-signup-prompt">
+                    <span>New to PlanPaths?</span>
+                    <a href="#">Sign up</a>
+                </div>
+                <div class="login-org-login">
+                    <a href="#">Log in with your organisation</a>
+                </div>
             </div>
-          </div>
-          <div class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-            <div class="flex flex-col text-base text-neutral-800 max-md:mt-5">
-              <article
-                class="flex flex-col justify-center px-3 py-3.5 rounded-xl border border-violet-700 border-solid bg-white bg-opacity-10 shadow-[0px_0px_24px_rgba(0,0,0,0.12)]"
-              >
-                <div class="flex flex-col p-2.5 w-full bg-white rounded-xl">
-                  <header class="flex gap-2 text-2xl font-bold text-violet-700">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdc5a57220f3c457d31116307d479df869c30ce1e93da79ee651841d8b67e698?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                      class="shrink-0 self-start w-6 aspect-square"
-                      alt=""
-                    />
-                    <h3>10th grade</h3>
-                  </header>
-                  <p class="mt-3 text-lg font-medium text-neutral-400">
-                    Regular track
-                  </p>
-                  <hr class="shrink-0 mt-2 h-px bg-stone-200" />
-                  <div class="flex gap-3 mt-5 max-md:pr-5">
-                    <span
-                      class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >English 2</span
-                    >
-                    <span
-                      class="px-3 py-2 whitespace-nowrap bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >Geometry</span
-                    >
-                    <span
-                      class="px-3 py-2 whitespace-nowrap bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >Biology</span
-                    >
-                  </div>
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                    >World language (Level 1)</span
-                  >
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                    >Elective (1 Credit)</span
-                  >
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                    >Earth space science or Elective</span
-                  >
-                </div>
-              </article>
-              <article
-                class="flex flex-col justify-center items-center px-3 mt-5 rounded-xl border border-violet-700 border-solid aspect-square bg-white bg-opacity-10 shadow-[0px_0px_24px_rgba(0,0,0,0.12)]"
-              >
-                <div
-                  class="flex flex-col px-2.5 pt-2.5 pb-12 w-full bg-white rounded-xl"
-                >
-                  <header class="flex gap-2 text-2xl font-bold text-violet-700">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdc5a57220f3c457d31116307d479df869c30ce1e93da79ee651841d8b67e698?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                      class="shrink-0 self-start w-6 aspect-square"
-                      alt=""
-                    />
-                    <h3>12th grade</h3>
-                  </header>
-                  <p class="mt-3 text-lg font-medium text-neutral-400">
-                    Regular track
-                  </p>
-                  <hr class="shrink-0 mt-2 h-px bg-stone-200" />
-                  <div class="flex gap-3 mt-5 max-md:mr-2.5">
-                    <span
-                      class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >English 4</span
-                    >
-                    <span
-                      class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >Math for collage algebra</span
-                    >
-                  </div>
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)] max-md:mr-2.5"
-                    >Economics (0.5 credit)</span
-                  >
-                  <span
-                    class="px-3 py-2 mt-3 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)] max-md:mr-2.5"
-                    >United states government (0.5 credit)</span
-                  >
-                  <div class="flex gap-3 mt-3 max-md:mr-2.5">
-                    <span
-                      class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >Elective (1 Credit)</span
-                    >
-                    <span
-                      class="px-3 py-2 bg-white rounded border border-violet-700 border-solid shadow-[0px_0px_4px_rgba(0,0,0,0.12)]"
-                      >Elective (1 Credit)</span
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- Section 4 -->
-    <section class="container mx-auto px-4 py-20 max-w-7xl">
-      <div class="mt-9 w-full max-w-[1122px] max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/67868ff9fed52029a53a2805d23ca794ae078961f71d2c0e267c64204c48c035?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-          alt="Descriptive image of the content"
-          class="w-full aspect-[1.49]"
-        />
-      </div>
-    </section>
-    <!-- Section 5 -->
-    <section class="container mx-auto px-4 py-20 max-w-7xl">
-      <div
-        class="px-20 pt-20 pb-8 w-full bg-violet-50 max-md:px-5 max-md:max-w-full"
-      >
-        <div class="flex gap-5 max-md:flex-col">
-          <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-            <div class="flex flex-col mt-2 text-violet-950 max-md:mt-10">
-              <h2 class="text-4xl font-bold">
-                Achieve your goals with
-                <span class="text-violet-950">PlanPaths</span>
-              </h2>
-              <p class="mt-5 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <div class="flex flex-col grow mt-2 max-md:mt-10 max-md:max-w-full">
-              <div class="max-md:max-w-full">
-                <div class="flex gap-5 max-md:flex-col">
-                  <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                    <article
-                      class="flex flex-col grow px-4 py-8 w-full text-lg font-medium text-black bg-white rounded-lg border border-violet-700 border-solid shadow-[0px_0px_18px_rgba(0,0,0,0.08)] max-md:mt-10"
-                    >
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7cd16cffe955c6bfce90b9ef59a783e0ba03fefba97a557709d8dbbd2987163?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                        alt="Icon representing career learning"
-                        class="border border-violet-700 border-solid aspect-square rounded-[50px] shadow-[0px_0px_4px_rgba(0,0,0,0.08)] w-[46px]"
-                      />
-                      <h3 class="mt-4">
-                        Initiate career learning to <br />
-                        conquer the world
-                      </h3>
-                    </article>
-                  </div>
-                  <div
-                    class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full"
-                  >
-                    <article
-                      class="flex flex-col grow px-4 py-7 w-full text-lg font-medium text-black bg-white rounded-lg border border-violet-700 border-solid shadow-[0px_0px_18px_rgba(0,0,0,0.08)] max-md:pr-5 max-md:mt-10"
-                    >
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/31c292b6ee2c8d7ad57dbbb854168d2dcd3670e7f8f78da0bff669e95f8183df?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                        alt="Icon representing college admission"
-                        class="border border-violet-700 border-solid aspect-square rounded-[50px] shadow-[0px_0px_4px_rgba(0,0,0,0.08)] w-[46px]"
-                      />
-                      <h3 class="mt-7">
-                        Boost college admission <br />
-                        chances
-                      </h3>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-11 max-md:mt-10 max-md:max-w-full">
-                <div class="flex gap-5 max-md:flex-col">
-                  <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                    <article
-                      class="flex flex-col grow px-4 pt-6 pb-3 w-full text-lg font-medium text-black bg-white rounded-lg border border-violet-700 border-solid shadow-[0px_0px_18px_rgba(0,0,0,0.08)] max-md:mt-10"
-                    >
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd4e14520d5315e981b7ffa8a78640d92490226ea8d3b41a2edefd59b8e3eb24?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                        alt="Icon representing academic balance"
-                        class="border border-violet-700 border-solid aspect-square rounded-[50px] shadow-[0px_0px_4px_rgba(96,58,200,0.08)] w-[46px]"
-                      />
-                      <h3 class="mt-4">
-                        Balance curriculum rigor <br />
-                        & build strong academic <br />
-                        profile
-                      </h3>
-                    </article>
-                  </div>
-                  <div
-                    class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full"
-                  >
-                    <article
-                      class="flex flex-col grow items-start py-8 pr-16 pl-4 w-full text-lg font-medium text-black bg-white rounded-lg border border-violet-700 border-solid shadow-[0px_0px_18px_rgba(0,0,0,0.08)] max-md:pr-5 max-md:mt-10"
-                    >
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/4299c8f4d00760ddbb8cde38a81925f7350447e4e706145dbc290714cd5e5378?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                        alt="Icon representing dreams and passions"
-                        class="border border-violet-700 border-solid aspect-square rounded-[50px] shadow-[0px_0px_4px_rgba(0,0,0,0.08)] w-[46px]"
-                      />
-                      <h3 class="mt-4">
-                        Follow your dreams <br />
-                        & passions
-                      </h3>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="login-image">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c95bbbbb172737744cf96f163330c44fd5aa0bae14e9dfc25134756a0ed2530c?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221" alt="Login illustration">
         </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <section
-      class="flex flex-col items-center px-20 pt-8 pb-12 w-full text-center bg-white max-md:px-5 max-md:max-w-full"
-    >
-      <h2 class="text-4xl font-bold text-violet-700 max-md:max-w-full">
-        Your choices + Social feedback
-      </h2>
-      <p class="mt-7 text-base font-medium text-violet-950 max-md:max-w-full">
-        Course selection are complex, challenging, and overwhelming.<br />
-        Planpaths bring together the Art & the science of your Course choices
-        with power of Social feedback.
-      </p>
-    </section>
-    <footer
-      class="flex gap-5 justify-between py-4 pr-5 pl-12 w-full bg-indigo-50 max-md:flex-wrap max-md:pl-5 max-md:max-w-full"
-    >
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/37e1c906373d6244981360d3b994dcf193bac35a5d831a15be7a0ff3e614bada?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-        alt="Company logo"
-        class="shrink-0 self-start max-w-full aspect-[5.56] w-[158px]"
-      />
-      <div class="flex flex-col max-md:max-w-full">
-        <nav
-          class="flex gap-4 text-sm font-medium text-violet-950 max-md:flex-wrap"
-        >
-          <a href="#about" class="self-start px-4 py-7 bg-white bg-opacity-0"
-            >About us</a
-          >
-          <a href="#privacy" class="px-2 py-7 bg-white bg-opacity-0"
-            >Privacy policy</a
-          >
-          <a href="#contact" class="px-6 py-7 bg-white bg-opacity-0 max-md:px-5"
-            >Contact us</a
-          >
-          <a href="#terms" class="py-7 pr-7 bg-white bg-opacity-0"
-            >Terms of services & Use</a
-          >
-        </nav>
-        <div class="flex gap-4 self-end mt-3 mr-7 max-md:mr-2.5">
-          <p class="my-auto text-sm font-medium text-violet-950">Follow us</p>
-          <div class="flex gap-2.5">
-            <a href="#facebook" aria-label="Follow us on Facebook">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b77abe48e5931d94e86c1aae45e1c735b6b0217d7d2a73c4a29aad5d676d97b6?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                alt=""
-                class="shrink-0 w-6 aspect-square"
-              />
-            </a>
-            <a href="#twitter" aria-label="Follow us on Twitter">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/03f6a572a58a46a34063b28c53e9c4d92343bbe79eda3425245098f2cbaca5dd?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                alt=""
-                class="shrink-0 w-6 aspect-square"
-              />
-            </a>
-            <a href="#instagram" aria-label="Follow us on Instagram">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/99c3b21c3e91a5e1d70916c7e96a227396d2d0ac5b2b5f4b68449ca115c02127?apiKey=6239683d8a6b4354886c43843da995e9&&apiKey=6239683d8a6b4354886c43843da995e9"
-                alt=""
-                class="shrink-0 my-auto aspect-[0.94] w-[17px]"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+</body>
 </html>
