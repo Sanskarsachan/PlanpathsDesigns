@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .signup-cont {
+        font-family: "Google Sans", -apple-system, Roboto, Helvetica, sans-serif;
+        background-color: #ffffff;
+        color: #3f3e3e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .signup-container {
+        display: flex;
+        width: 100vw;
+      }
+      .signup-content,
+      .signup-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .signup-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 10px rgba(18, 17, 17, 0.4);
+        height: 100%;
+      }
+      .signup-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .signup-form-header h1 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      .signup-form-header p {
+        font-size: 16px;
+        color: #515151;
+        margin-bottom: 32px;
+      }
+      .signup-form-group {
+        margin-bottom: 16px;
+      }
+      .signup-form-group label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      .signup-form-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #d0d0d0;
+        border-radius: 4px;
+      }
+      .signup-password-input {
+        position: relative;
+      }
+      .signup-password-toggle {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+      .signup-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #603ac8;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 24px;
+      }
+      .signup-divider {
+        text-align: center;
+        margin: 24px 0;
+        color: #a3a3a3;
+      }
+      .signup-social-login button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        background-color: #ffffff;
+        border: 1px solid #d0d0d0;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #515151;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .signup-social-login img {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+      }
+      .signup-signin-prompt {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 14px;
+      }
+      .signup-signin-prompt a {
+        color: #603ac8;
+        text-decoration: underline;
+        font-weight: 700;
+      }
+      .signup-org-signup {
+        text-align: center;
+        margin-top: 24px;
+      }
+      .signup-org-signup a {
+        color: #603ac8;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        .signup-container {
+          flex-direction: column;
+        }
+        .signup-content,
+        .signup-image {
+          width: 100%;
+          height: 50vh;
+        }
+        .signup-image {
+          order: -1;
+          margin-bottom: 40px;
+          display: none; /* Hide the image on mobile */
+        }
+        .signup-form {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-cont">
+      <div class="signup-container">
+        <div class="signup-content">
+          <div class="signup-form">
+            <div class="signup-form-header">
+              <h1>Sign Up</h1>
+              <p>Create your own learning path</p>
+            </div>
+            <form>
+              <div class="signup-form-group">
+                <label for="email">Email ID</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email ID"
+                  required
+                />
+              </div>
+              <div class="signup-form-group">
+                <label for="password">Password</label>
+                <div class="signup-password-input">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Create password"
+                    required
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f2cfa713f8ca978c7f5e617e57e315d49ce44a372080e2f915ff169cbfb4334?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221"
+                    alt="Show password"
+                    class="signup-password-toggle"
+                  />
+                </div>
+              </div>
+              <div class="signup-form-group">
+                <label for="confirm-password">Re-enter password</label>
+                <div class="signup-password-input">
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Re-enter password"
+                    required
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a96201138959ec6f485e0baa7f237dd8550d6316bce357a2333b32d70914650?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221"
+                    alt="Show password"
+                    class="signup-password-toggle"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="signup-button">Join for free</button>
+            </form>
+            <div class="signup-divider">or</div>
+            <div class="signup-social-login">
+              <button class="signup-google-login">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/38771e923938953756895aa380702e83d3885a04fd1b4ffdb668b1d0bdefcf41?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221"
+                  alt="Google logo"
+                />
+                Continue with Google
+              </button>
+              <button class="signup-facebook-login">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8781fddd67ecc702a5578593625a059f58ce54f4e44ebb161cf06511f10d87a6?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221"
+                  alt="Facebook logo"
+                />
+                Continue with Facebook
+              </button>
+            </div>
+            <div class="signup-signin-prompt">
+              <span>Already on PlanPaths?</span>
+              <a href="#login">Log in</a>
+            </div>
+            <div class="signup-org-signup">
+              <a href="#org-signup">Sign up with your organisation</a>
+            </div>
+          </div>
+        </div>
+        <div class="signup-image">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c95bbbbb172737744cf96f163330c44fd5aa0bae14e9dfc25134756a0ed2530c?apiKey=467ad5aebcc545afb6ec35cc90e32221&&apiKey=467ad5aebcc545afb6ec35cc90e32221"
+            alt="Sign up illustration"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
